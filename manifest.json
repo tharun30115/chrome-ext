@@ -3,7 +3,7 @@
     "name": "Network Speed Overlay",
     "version": "1.0",
     "description": "Shows current network speed as an overlay.",
-    "permissions": ["webRequest", "webRequestBlocking", "activeTab", "scripting"],
+    "permissions": ["scripting", "tabs"],
     "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
@@ -14,13 +14,6 @@
         "js": ["content.js"],
         "css": ["overlay.css"]
       }
-    ],
-    "icons": {
-      "48": "icon.png"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    }
+    ]
   }
   
